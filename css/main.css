@@ -1,0 +1,270 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/* Global
+// ============== */
+
+html {
+  height: 100%;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  background: #FFF;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* container */
+
+.c-container {
+  width: 1024px;
+  margin: 0 auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .c-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .c-container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.c-container.-padded {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media screen and (max-width: 540px) {
+  .c-container.-padded {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+/* grid */
+
+.c-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 5rem;
+}
+
+.c-grid.-c2 {
+  -ms-grid-columns: 1fr 5rem 1fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.c-grid.-c2 img {
+  max-width: 100%;
+}
+
+.c-grid.-c3 {
+  -ms-grid-columns: 1fr 5rem 1fr 5rem 1fr;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 540px) {
+  .c-grid.-c2,
+  .c-grid.-c3 {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .c-grid.-collapse {
+    grid-gap: 0;
+  }
+}
+
+.c-grid_s1 {
+  -ms-grid-column-span: 1;
+  grid-column: span 1;
+}
+
+.c-grid_s2 {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+}
+
+@media screen and (max-width: 540px) {
+  .c-grid_s1,
+  .c-grid_s2 {
+    span: 1;
+  }
+}
+
+
+/* Typography
+// ============== */
+
+
+html {
+  font-size: 8px;
+}
+
+body {
+  color: #1A3B40;
+  font: 2rem/1.5 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #00A5BE;
+  text-decoration: none;
+  -webkit-transition: color 0.25s ease-out;
+  -o-transition: color 0.25s ease-out;
+  transition: color 0.25s ease-out;
+}
+
+a:hover {
+  color: #007587;
+}
+
+p:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.u-nowrap {
+  white-space: nowrap;
+}
+
+/* heading */
+
+.c-heading {
+  margin-bottom: 1rem;
+  font-family: 'Schoolbell', cursive;
+}
+
+.c-heading.-l1 {
+  font-size: 6rem;
+  line-height: 7rem;
+}
+
+@media screen and (max-width: 540px) {
+  .c-heading.-l1 {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+}
+
+.c-heading.-l2 {
+  font-size: 4rem;
+  line-height: 5rem;
+}
+
+@media screen and (max-width: 540px) {
+  .c-heading.-l2 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+
+/* label */
+
+.c-label {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+/* header
+// ============== */
+
+.c-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.c-header_hero {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  background: #cce6e7 url(../images/plateau.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.c-header_details {
+}
+
+
+/* image
+// ============== */
+
+
+.c-image {
+  border-radius: 1rem;
+}
+
+
+/* main
+// ============== */
+
+/* about */
+
+.c-about {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#C7E6E3));
+  background: -o-linear-gradient(#FFF, #C7E6E3);
+  background: linear-gradient(#FFF, #C7E6E3);
+}
+
+/* purchase */
+
+.c-purchase {
+  background: #E3F2F1;
+}
+
+
+/* footer
+// ============== */
+
+.c-footer {
+  color: #FFF;
+  background: #314C34;
+}
+
+.c-footer_copyright {
+  color: #6C8B70;
+}
