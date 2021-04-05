@@ -64,6 +64,10 @@ body {
   padding-bottom: 5rem;
 }
 
+.c-container.-padded-bottom {
+  padding-bottom: 5rem;
+}
+
 @media screen and (max-width: 540px) {
   .c-container.-padded {
     padding-top: 3rem;
@@ -224,15 +228,16 @@ strong {
   height: 90vh;
 }
 
+.c-header.-post {
+  height: 50vh;
+}
+
 .c-header_hero {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   background: #cce6e7 url(../images/plateau.jpg) no-repeat center center;
   background-size: cover;
-}
-
-.c-header_details {
 }
 
 
@@ -260,6 +265,10 @@ strong {
   background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#C7E6E3));
   background: -o-linear-gradient(#FFF, #C7E6E3);
   background: linear-gradient(#FFF, #C7E6E3);
+}
+
+.c-about.-mini {
+  background: #C7E6E3;
 }
 
 /* purchase */
