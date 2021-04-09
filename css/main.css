@@ -228,9 +228,9 @@ strong {
   height: 90vh;
 }
 
-.c-header.-post {
-  height: 60vh;
-}
+/*.c-header.-post {
+  height: 70vh;
+}*/
 
 .c-header_hero {
   -webkit-box-flex: 1;
