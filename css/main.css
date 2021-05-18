@@ -125,7 +125,7 @@ body {
 
 /* columns */
 .c-column {
-  grid-gap: 5rem;
+  column-gap: 5rem;
 }
 
 .c-column.-col2 {
@@ -134,7 +134,7 @@ body {
 
 @media screen and (max-width: 540px) {
   .c-column {
-    grid-gap: 0;
+    column-gap: 0;
   }
 
   .c-column.-col2 {
